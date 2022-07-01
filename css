@@ -1,1 +1,73 @@
+/* general design */
+html {
+  background-color: #aaf0da;
+}
+
+.button1 {
+  height: 25px;
+  width: auto;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+  background-color: #FFFF00;
+  font-size: 25px;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 10px;
+}
+
+/* desktop design */
+@media only screen and (max-width: 1440px) {
+.container {
+    display: grid;
+    column-count: 2;
+    padding: 10px;
+    height: 20vh;
+  }
+  .box1 {
+    padding: 10px;
+    background-color: white;
+    grid-column-start: span 2;
+  }
+  .bpx2 {
+    padding: 10px;
+    background-color: #418c74;
+  }
+  .box3 {
+    padding: 10px;
+    background-color: #89d9bf;
+  }
+  .box4 {
+    padding: 10px;
+    background-color: #7aa396;
+    grid-column-end: span 2;
+  }
+}
+
+/* mobile design */
+@media only screen and (max-width: 375px) {
+  .container {
+    display: flex;
+    grid-template-columns: 100%;
+    flex-direction: column;
+    column-gap: 20px;
+    padding: 10px;
+    height: 20vh;
+  }
+  .box1 {
+    padding: 10px;
+    background-color: white;
+  }
+  .bpx2 {
+    padding: 10px;
+    background-color: #418c74;
+  }
+  .box3 {
+    padding: 10px;
+    background-color: #89d9bf;
+  }
+  .box4 {
+    padding: 10px;
+    background-color: #7aa396;
+  }
+}
 
